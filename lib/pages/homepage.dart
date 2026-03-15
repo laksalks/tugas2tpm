@@ -4,6 +4,8 @@ import 'package:tugas1/pages/testAngka.dart';
 import 'package:tugas1/pages/ganjilGenap.dart';
 import 'package:tugas1/pages/penjumlahan_page.dart';
 import 'package:tugas1/pages/pengurangan_page.dart';
+import 'package:tugas1/pages/perkalian_page.dart';
+import 'package:tugas1/pages/pembagian_page.dart';
 
 class Homepages extends StatelessWidget {
   const Homepages({super.key});
@@ -74,6 +76,12 @@ class Homepages extends StatelessWidget {
                 }),
                 _buildMenuButton(context, Icons.calculate, "PENGURANGAN", const Color.fromARGB(255, 1, 45, 82), () {
                   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PenguranganPage()));
+                }),
+                _buildMenuButton(context, Icons.calculate, "PERKALIAN", Colors.green[700]!, () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PerkalianPage()));
+                }),
+                _buildMenuButton(context, Icons.calculate, "PEMBAGIAN", Colors.purple[700]!, () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PembagianPage()));
                 }),
                 _buildMenuButton(context, Icons.numbers, "PENENTUAN BILANGAN GANJIL GENAP", Colors.teal, () {
                   Navigator.pushReplacement(
